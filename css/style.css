@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+ /**********BODY***************/
 body{
 	margin: 0;
     padding: 0;
 	background-color: rgb(108, 139, 165);
 	box-sizing: border-box;
 }
+
+/***************HEADER************/
 .logobox{
 	display: grid;
 	background-color: rgb(87, 138, 180);
@@ -12,6 +17,7 @@ body{
 	justify-content: left;
 	grid-template-columns: auto auto;
 }
+
 .logo{
 	float:left;
 	width: 100px;
@@ -20,18 +26,8 @@ body{
 	padding-top: 0px;
 	border-radius: 35px;
 }
-.p{
-	margin-left:10px;
-	text-indent: 20px;
-}
-p::first-letter{
-	font-size: 20px;
-}
-h2, h3{
-	padding: 2px 5px 0px 5px;
-}
 
-.title, .payoff{
+.title, .subtitle{
 	grid-column: 1/3;
 	margin-top:10px;
 	letter-spacing: 1px;
@@ -46,6 +42,16 @@ h1{
 	padding-right: 10px;
 	font-size: 1.5rem;
 }
+
+h2, h3{
+	padding: 2px 5px 0px 5px;
+}
+
+h3{
+	font-family: 'Notable';
+}
+ 
+/****************NAVBAR*****************/
 
 nav ul{
 	width: 100%; 
@@ -72,13 +78,26 @@ nav .active {
 	border-radius: 5px;
 }
 nav a:hover{
-	color: #053f75;
+	color: #8fb0d0;
 	transition: color 0.4s ease;
 	padding: 10px;
 	border-radius: 5px;
 }
 
-  .main-container{
+/* PARAGRAPH STYLING */
+
+p{
+	margin-left:10px;
+	text-indent: 15px;
+}
+
+p::first-letter{
+	font-size: 18px;
+}
+
+/****************INDEX*********************/
+
+.main-container{
 	display:flex;
 	flex-wrap: wrap;
 	margin: 50px;
@@ -86,16 +105,64 @@ nav a:hover{
 	width: 80%;
 	
 }
-.product-description{
+
+.technology-description{
 	padding-left: 10px;
 }
+
 .product-footer{
 	margin-left: 10px;
 }
-  /**PRODUCTS**/
 
+/****************INFO PAGE*******************/
 
-  #products-grid {
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+
+.column {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(31, 30, 30, 0.1);
+    text-align: left;
+}
+
+.column h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.column ul{
+    list-style: none;
+    padding: 0;
+}
+
+.column li {
+    margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.column ul li::before {
+	content: "•"; /* bullet point before list items */
+	color: #31923b; /* bullet point color */
+	font-weight: bold;
+	width: 1em;
+	font-size: 24px; 
+    margin-right: 10px; 
+    
+}
+
+.column p{
+	font-size: 18px;
+}
+
+/*******************PRODUCTS********************/
+
+#products-grid {
 	display: grid;
 	grid-template-columns: auto auto auto;
 	margin: 10px;
@@ -120,28 +187,24 @@ nav a:hover{
 #Article1{
 	grid-area: Art1;
 }
-
 #Article2{
 	grid-area: Art2;
 }
-
 #Article3{
 	grid-area: Art3;
 }
-
 #Article4{
 	grid-area: Art4;
 }
-
 #Article5{
 	grid-area: Art5;
 }
-
 #Article6{
 	grid-area: Art6;
 }
 
-#aside-contents {
+/***** PRODUCT ASIDE AREAS ******/
+#products-aside {
 	background-color:rgb(58, 110, 199);
 	grid-area: aside;
 	display: grid;
@@ -153,153 +216,167 @@ nav a:hover{
 	grid-gap: 2px;
 }
 
-#aside-content1 {
+#product1 {
 	grid-area: aside1;
 }
-
-#aside-content2 {
+#product2 {
 	grid-area: aside2;
 }
-
-#aside-content3 {
+#product3 {
 	grid-area: aside3;
 }
+
+
+/****** PRICE PAGE*******/
+
 .pricetable{
 	display: flex;
-justify-content: space-between; /* This makes table and aside align horizontally */
-width: 100%;
-gap: 50px;
+	justify-content: space-between; /* This makes table and aside align horizontally */
+	width: 100%;
+	gap: 50px;
 }
+
 table, tr{
 	width: 100%
-	}
-	tr:nth-child(even) {
-		 /* Style even rows (2nd, 4th, 6th, etc.) with #CFF background */
-		background-color: #CFF;
-	  }
+}
+
+tr:nth-child(even) {
+	/* Style even rows (2nd, 4th, 6th, etc.) with #CFF background */
+	background-color: #CFF;
+}
+
 	  
-	  /* Style odd rows (1st, 3rd, 5th, etc.) with #FFF background */
-	  tr:nth-child(odd) {
-		background-color: #FFF;
-	  }
-	  .pricecolumn{
-		width:15%;
-	}
-	th{
-		text-align: left;
-	}
-	table, th, td{
-		border: 1.5px solid #000;
-		border-collapse: collapse;
-	}
-	th, td{
-		padding: 15px;
-	}
+	/* Style odd rows (1st, 3rd, 5th, etc.) with #FFF background */
+tr:nth-child(odd) {
+	background-color: #FFF;
+}
 
-	.contactpage{
-		display: flex;
-    	justify-content: space-between; /* This makes table and aside align horizontally */
-		gap: 70px;
-	}
-	
-	#contact-form{
-		margin-left: 40px;
-		height: 100%;
-		background-color: #BCCCDC;
-		width: 80%;
-		font-family: sans-serif;
-		border-radius: 20px;
-	}
-	#contact-aside {
-		background-color: rgb(58, 110, 199);
-		width: 100%;
-		margin: 10px;
-	}
-	
-	#contact-aside ul {
-		list-style: none;
-	}
-	
-	#contact-aside ul li{
-		width: 200px;
-		margin: 12px;
-	}
-	
-	.textarea-field,.input-field{
-		width:95%;
-		height: 35px;
-		margin-top: 5px;
-		margin-bottom: 10px;
-		padding-left: 10px;
-		padding-right: 10px;
-		border-radius: 5px;
-		outline:none;
-	}
-	.textarea-field{
-		height: 200px;
-	}
-	.btn{
-		border-radius: 10px;
-		color: #fff;
-		margin-top: 18px;
-		padding: 15px;
-		background-color: #FA0;
-		font-size: 12px;
-		border: none;
-		cursor:pointer;
-		width:130px;
-	}
+.pricecolumn{
+	width:15%;
+}
 
-	fieldset {
-		flex-direction: column;
-		width: 90%;
-	}
-	.copyright-notice{
-		height:40px;
-		bottom: 0px;
-		text-align:center;
-		display: inline-block;
-		background-color: #ffffff; 
-		width: 100%; 
-		word-spacing: normal;
-	}
-	.cookie-statement {
-		position:fixed;
-		float: right;
-		bottom: 0px; 
-		right: 20px; 
-		width: 200px;
-		background-color: #FA0;
-		color: #FFF;
-		padding: 10px 20px;
-		opacity: 0.8;
-		border: 1px solid #000;
-		z-index: 9999;
-	}
+th{
+	text-align: left;
+}
 
-	#article-image{
-		min-height: 100px;
-	}
-	.rightside{
-		background-color: rgb(110, 119, 149);
-		border-radius: 50px;
-	}
-	.rightside ul li{
-		list-style: none;
-		
-		
-	}
+table, th, td{
+	border: 1.5px solid #000;
+	border-collapse: collapse;
+}
+
+th, td{
+	padding: 15px;
+}
+
+/********LOCATION PAGE*********/
+
+.locationlist{
+	background-color: rgb(110, 119, 149);
+	border-radius: 50px;
+}
+
+.locationlist ul li{
+	list-style: none;
+	
+	
+}
+
+/********CONTACT PAGE*******/
+
+.contactpage{
+	display: flex;
+    justify-content: space-between; /* This makes table and aside align horizontally */
+	gap: 70px;
+}
+	
+#contact-form{
+	margin-left: 40px;
+	height: 100%;
+	background-color: #BCCCDC;
+	width: 80%;
+	font-family: sans-serif;
+	border-radius: 20px;
+}
+
+fieldset input, textarea{
+	width:95%;
+	height: 35px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
+	outline:none;
+}
+	
+textarea{
+	height: 200px;
+}
+.btn{
+	border-radius: 10px;
+	color: #fff;
+	margin-top: 18px;
+	padding: 15px;
+	background-color: #FA0;
+	font-size: 12px;
+	border: none;
+	cursor:pointer;
+	width:130px;
+}
+
+fieldset {
+	flex-direction: column;
+	width: 90%;
+}
+
+/***** COMMON ASIDE CONTENT FOR PRICING AND CONTACT PAGE*******/
+
+#aside-content {
+	background-color: rgb(58, 110, 199);
+	width: 100%;
+	margin: 10px;
+}
+	
+#aside-content ul {
+	list-style: none;
+}
+	
+#aside-content ul li{
+	width: 200px;
+	margin: 12px;
+}
+
+/*********COPYRIGHT NOTICE**************/
+.copyright-notice{
+	height:40px;
+	bottom: 0px;
+	text-align:center;
+	display: inline-block;
+	background-color: #ffffff; 
+	width: 100%; 
+	word-spacing: normal;
+}
+
+/*********COOKIE STATEMENT***********/
+.cookie-statement {
+	position:fixed;
+	float: right;
+	bottom: 0px; 
+	right: 20px; 
+	width: 200px;
+	background-color: #FA0;
+	color: #FFF;
+	padding: 10px 20px;
+	opacity: 0.8;
+	border: 1px solid #000;
+	z-index: 9999;
+}
+
+/********************************PC DISPLAY******************************/
+
 @media screen and (min-width: 769px) {
-	.rightside{
-		margin:20px;
-		width: 50%;
-	}
-	
-	.rightside ul li{
-		width: 300px;
-		
-	}
-	/**INDEX**/
+
+	/************INDEX*************/
 	#promotion-video {
 		display: block;
 		width: 60%;
@@ -308,34 +385,51 @@ table, tr{
 		border-style: double;
 		border-width: 1px;
 	}
+
 	aside{
 		color: #FFF;
-		flex-grow: none;
 		float: right;
 		right:0em;
 	}
+
 	aside > ol {
 		font-weight: bold;
 		line-height: 1.5em;
-	  }
-	
+	}
+
+	/*********INFO PAGE**********/
+
+	.container{
+		gap:8%;
+	}
+
+	.column{
+	 	width: 80%;
+	}
+
+	/********LOCATION PAGE*******/
+
 	.locations {
 		display: flex;
-		gap: 15%;
+		gap: 10%;
+	}
+
+	.locationlist{
+		margin:20px;
+		width: 50%;
 	}
 	
-	.rightside img{
-		margin: 10px;
+	.locationlist ul li{
+		width: 350px;
+		
+	}
+	
+	.locationlist img{
+		margin: 20px;
 		width: 300px;
 		height: 300px;
 	}
 	
-	.image{
-		float:right;
-		width: 200px;
-		height: 200px;	
-	}
-
 	/**PRICING**/
 	img{
 		float:right;
@@ -360,82 +454,74 @@ table, tr{
 		display: flex;
 	}
 
-	#article-image{
+	/********HAMBURGER*********/
+	#hamburger-menu, #hamburger-button{
+		display: none;
+	}
+
+	.image{
+		float:right;
 		width: 200px;
-	}
-	#hamburger-menu{
-		display: none;
-	}
-	#hamburger-button{
-		display: none;
+		height: 200px;	
 	}
 }
+
+/*****************************MOBILE PHONE*******************************/
 
 @media screen and (max-width: 768px) {
+
+	/*************NAV AND HAMBURGER MENU****************/
+	nav {
+		display: none; /* hides the navigation by default */
+	}
 	
-.menu-icon {
-  position:absolute;
-    top: 6em;
-    right: 1em;
-    width: 70px;
-    height: 60px;
-    background: no-repeat center;
-	background-size: 100%;
-    cursor: pointer;
-    z-index: 101; /* Slightly higher than the checker */
-}
+	nav ul {
+		position: fixed;
+		width: 30%;
+		height: 35%;
+		right: 0em;
+		flex-direction: column;
+		gap: 10%;
+		list-style-type: none;
+	}
+	
+	#hamburger-menu {
+		display: none; 
+	}
+	
+	#hamburger-menu:checked ~ nav {
+		display: block; /* shows the navigation when the checkbox is checked */
+	}
 
-nav {
-    display: none; /* hides the navigation by default */
-}
+	.menu-icon {
+		position:absolute;
+		top: 6em;
+		right: 1em;
+		width: 70px;
+		height: 60px;
+		background: no-repeat center;
+		background-size: 100%;
+		cursor: pointer;
+		z-index: 101; /* Slightly higher than the checker */
+	}
 
-nav ul {
-	position: fixed;
-	width: 30%;
-    height: 35%;
-	right: 0em;
-    flex-direction: column;
-    gap: 10%;
-    list-style-type: none;
-}
+	/*************** INDEX ********************/
 
-#hamburger-menu {
-    display: none; 
-}
+	.main-container{
+		margin: 10px;
+		width: 100%;
+	}
 
-#hamburger-menu:checked ~ nav {
-    display: block; /* shows the navigation when the checkbox is checked */
-}
+	#products{
+		display: flex;
+		flex-direction: column-reverse;
+	}
 
 	#promotion-video {
         margin: 12px;
         width: 80%;
     }
-	.locations{
-		flex-wrap: wrap;
-		gap: 10px;
-	}
-	.rightside{
-		margin-left: 20px;
-		width: 80%;
-	}
 
-	.rightside ul li{
-		margin-left: 10px;;
-	}
-	.rightside img{
-		width: 300px;
-		height: 300px;
-	}
-	/** INDEX **/
-	.main-container{
-		margin: 10px;
-		width: 100%;
-	}
-	#products{
-		display: flex;
-		flex-direction: column-reverse;
-	}
 	aside {
 		color: #FFF;
 		float: none;
@@ -448,7 +534,22 @@ nav ul {
 		height: auto;
 	}
 
-	/** PRODUCTS **/
+	/************INFO PAGE*********/
+
+	.container {
+		flex-direction: column; 
+		gap: 2em;
+		flex-wrap: wrap;
+			  
+	}
+
+	.column{
+		width: 90%;
+		margin-bottom: 2em;
+	}
+
+	/*************** PRODUCTS ************/
+
 	#products-grid {
 		display: grid;
 		gap: 1em;
@@ -468,7 +569,8 @@ nav ul {
 		display: none;
 	}
 
-	#aside-contents {
+	/*****PRODUCT ASIDE****/
+	#products-aside {
 		grid-area: aside;
 		grid-template-areas:
 			'aside1' 
@@ -481,10 +583,36 @@ nav ul {
 		width:400px;
 		height: 400px;
 	}
-	/** PRICING **/
+
+	/*********************LOCATION PAGE*******************/
+
+	.locations{
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.locationlist{
+		margin-left: 20px;
+		width: 80%;
+	}
+
+	.locationlist ul li{
+		margin-left: 20px;
+		width: 350px;
+	}
+
+	.locationlist img{
+		width: 300px;
+		height: 300px;
+	}
+	
+
+	/********************* PRICING ********************/
+
 	.price-article{
 		display: none;
 	}
+
 	.pricetable{
 		flex-wrap: wrap;
 	}
@@ -493,13 +621,15 @@ nav ul {
 		width: 100%;
 	}
 
-	/** CONTACT **/
+	/********************* CONTACT *******************/
+
 	.contact-article, .price-article{
 		margin-left: 40px;
 		text-align: left;
 		width:80%;
 		font-size: 20px;
 	}
+
 	.contactpage {
 		flex-direction: column;
 	}
@@ -516,32 +646,39 @@ nav ul {
 		display: block;
 	}
 	
-	#contact-aside{
+	/****************COMMON ASIDE CONTENT FOR PRICING AND CONTACT PAGE*************/
+
+	#aside-content{
 		margin: 0px;
 	}
 
-	#contact-aside ul {
+	#aside-content ul {
 		display: flex;
 		gap: 100px;
 	}
-	#contact-aside ul li:first-child {
+
+	#aside-content ul li:first-child {
 		display: none;
 	}
-	#contact-aside ul li img {
+
+	#aside-content ul li img {
 		width: 90%;
 		border-radius: 10px;
 		height: 160px;
 	}
-	#article-image {
-		min-height: 100px;
-	}
+
+	/**********COPYRIGHT*************/
 
 	.copyright-info{
 		display: none;
 	}
+
 	.copyright-notice {
 		display: block;
 	}
+
+	/***********COOKIE STATEMENT*********/
+	
 	.cookie-statement {
 		position: fixed;
 		width: 90%;
