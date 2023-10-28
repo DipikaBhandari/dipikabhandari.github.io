@@ -47,10 +47,13 @@ h2, h3{
 	padding: 2px 5px 0px 5px;
 }
 
-h3{
-	font-family: 'Notable';
+h1{
+	font-family: 'Notable', sans-serif;
 }
  
+/************************PC AND MOBILE COMMON PROPERTIES PLACED AT TOP***************************/
+
+
 /****************NAVBAR*****************/
 
 nav ul{
@@ -102,7 +105,7 @@ p::first-letter{
 	flex-wrap: wrap;
 	margin: 50px;
 	background-color: #BCCCDC;
-	width: 80%;
+	width: 70%;
 	
 }
 
@@ -112,6 +115,19 @@ p::first-letter{
 
 .product-footer{
 	margin-left: 10px;
+}
+
+aside{
+	background-color: #5790c9;
+	width: 20%;
+	color: #FFF;
+	float: right;
+	right:0em;
+}
+
+aside > ol {
+	font-weight: bold;
+	line-height: 3em;
 }
 
 /****************INFO PAGE*******************/
@@ -237,6 +253,7 @@ p::first-letter{
 }
 
 table, tr{
+	padding: 10px;
 	width: 100%
 }
 
@@ -386,16 +403,6 @@ fieldset {
 		border-width: 1px;
 	}
 
-	aside{
-		color: #FFF;
-		float: right;
-		right:0em;
-	}
-
-	aside > ol {
-		font-weight: bold;
-		line-height: 1.5em;
-	}
 
 	/*********INFO PAGE**********/
 
@@ -430,14 +437,14 @@ fieldset {
 		height: 300px;
 	}
 	
-	/**PRICING**/
+	/*********************PRICING*****************************/
 	img{
 		float:right;
 		width: 200px;
 		height: 200px;	
 	}
 
-	/**CONTACT**/
+	/**********************CONTACT***************************/
 	.contact-article, .price-article{
 		width:100%;
 		margin: 10px;
@@ -523,6 +530,8 @@ fieldset {
     }
 
 	aside {
+		margin: 12px;
+		width: 50%;
 		color: #FFF;
 		float: none;
 		text-align: left;
