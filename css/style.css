@@ -1,0 +1,487 @@
+body{
+	margin: 0;
+    padding: 0;
+	background-color: rgb(108, 139, 165);
+	box-sizing: border-box;
+}
+.logobox{
+	display: grid;
+	width: 100%;
+	top: 0px;
+	justify-content: left;
+	grid-template-columns: auto auto;
+}
+.logo{
+	float:left;
+	width: 100px;
+	height: 100px;
+	padding-left: 0px;
+	padding-top: 0px;
+	border-radius: 35px;
+}
+.p{
+	margin-left:10px;
+}
+p::first-letter{
+	font-size: 20px;
+}
+h2, h3{
+	padding: 2px 5px 0px 5px;
+}
+
+.title, .payoff{
+	grid-column: 1/3;
+	margin-top:10px;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+	text-transform: uppercase;
+}
+
+h1{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 1.5rem;
+}
+
+nav ul{
+	width: 100%; 
+	height: 50px;
+	padding: 5px;
+	margin: 0px;
+	display: flex;
+	gap: 15%;
+	align-items: center;
+	background-color: #627D98; 
+	list-style:none;
+}
+
+li a{
+	color: #FFF;
+	margin-top: 5px;
+	margin-bottom: 5px;
+   text-decoration: none;
+	font-size: 20px;
+}
+nav a:hover, .active {
+	text-decoration: underline; /* Underline when hovered over */
+	background-color: #053f75;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.active {
+    text-decoration: none;
+}
+aside{
+	color: #FFF;
+	flex-grow: none;
+	float: right;
+	right:0em;
+}
+aside > ol {
+	font-weight: bold;
+	line-height: 1.5em;
+  }
+  .main-container{
+	display:flex;
+	flex-wrap: wrap;
+	margin: 50px;
+	background-color: #BCCCDC;
+	width: 80%;
+	
+}
+.product-description{
+	padding-left: 10px;
+}
+.product-footer{
+	margin-left: 10px;
+}
+  /**PRODUCTS**/
+
+
+  #products-grid {
+	display: grid;
+	grid-template-columns: auto auto;
+	margin: 10px;
+	gap: 2em;
+	grid-template-areas:
+		'Art2 Art1 Art3'
+		'Art2 Art1 Art3'
+		'Art5 Art1 Art3'
+		'Art5 Art1 Art4'
+		'Art5 Art1 Art4'
+		'Art5 Art1 Art4'
+		'Art5 Art6 Art6'
+		'aside aside aside';
+}
+
+#products-grid article {
+	margin: 2px 0;
+	background-color: #92cfe7;
+	border-radius: 0.5em;
+}
+
+#Article1{
+	grid-area: Art1;
+}
+
+#Article2{
+	grid-area: Art2;
+}
+
+#Article3{
+	grid-area: Art3;
+}
+
+#Article4{
+	grid-area: Art4;
+}
+
+#Article5{
+	grid-area: Art5;
+}
+
+#Article6{
+	grid-area: Art6;
+}
+
+#aside-contents {
+	background-color:rgb(58, 110, 199);
+	grid-area: aside;
+	display: grid;
+	width: 100%;
+	left: 0px;
+	right: 0px;
+	grid-template-areas:
+		"aside1 aside2 aside3";
+	grid-gap: 2px;
+}
+
+#aside-content1 {
+	grid-area: aside1;
+}
+
+#aside-content2 {
+	grid-area: aside2;
+}
+
+#aside-content3 {
+	grid-area: aside3;
+}
+.pricetable{
+	display: flex;
+width: 100%;
+gap: 50px;
+}
+table, tr{
+	width: 100%
+	}
+	tr:nth-child(even) {
+		background-color: #CFF;
+	  }
+	  
+	  /* Style odd rows (1st, 3rd, 5th, etc.) with #FFF background */
+	  tr:nth-child(odd) {
+		background-color: #FFF;
+	  }
+	  .pricecolumn{
+		width:15%;
+	}
+	th{
+		text-align: left;
+	}
+	table, th, td{
+		border: 1.5px solid #000;
+		border-collapse: collapse;
+	}
+	th, td{
+		padding: 15px;
+	}
+
+	.contactpage{
+		display: flex;
+    	justify-content: space-between; /* This makes table and aside align horizontally */
+		gap: 70px;
+	}
+	
+	#contact-form{
+		margin-left: 40px;
+		height: 100%;
+		background-color: #BCCCDC;
+		width: 80%;
+		font-family: sans-serif;
+		border-radius: 20px;
+	}
+	#contact-aside {
+		background-color: rgb(58, 110, 199);
+		width: 100%;
+		margin: 10px;
+	}
+	
+	#contact-aside ul {
+		list-style: none;
+	}
+	
+	#contact-aside ul li{
+		width: 200px;
+		margin: 12px;
+	}
+	
+	.textarea-field,.input-field{
+		width:95%;
+		height: 35px;
+		margin-top: 5px;
+		margin-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 5px;
+		outline:none;
+	}
+	.textarea-field{
+		height: 200px;
+	}
+	.btn{
+		border-radius: 10px;
+		color: #fff;
+		margin-top: 18px;
+		padding: 15px;
+		background-color: #FA0;
+		font-size: 12px;
+		border: none;
+		cursor:pointer;
+		width:130px;
+	}
+
+	fieldset {
+		flex-direction: column;
+		width: 90%;
+	}
+	.copyright-notice{
+		height:40px;
+		bottom: 0px;
+		text-align:center;
+		display: inline-block;
+		background-color: #ffffff; 
+		width: 100%; 
+		word-spacing: normal;
+	}
+	.cookie-statement {
+		position:fixed;
+		float: right;
+		bottom: 0px; 
+		right: 20px; 
+		width: 200px;
+		background-color: #FA0;
+		color: #FFF;
+		padding: 10px 20px;
+		opacity: 0.8;
+		border: 1px solid #000;
+		z-index: 9999;
+	}
+
+	#article-image{
+		min-height: 100px;
+	}
+	.rightside{
+		border-radius: 50px;
+		margin:50px;
+		background-color: rgb(110, 119, 149);
+		width: 80%;
+	}
+	
+	.rightside ul li{
+		list-style: none;
+		width: 400px;
+		margin-left: 200px;;
+	}
+@media screen and (min-width: 769px) {
+	/**INDEX**/
+	
+	.homepage{
+		display: flex;
+    	width: 100%;
+		gap: 50px;
+	}
+	.locations {
+		display: flex;
+		width: 100%;
+		gap: 20%;
+	}
+	
+	.rightside img{
+		margin: 10px;
+		width: 400px;
+		height: 400px;
+	}
+	
+	.image{
+		float:right;
+		width: 200px;
+		height: 200px;	
+	}
+
+	/**PRICING**/
+	img{
+		float:right;
+		width: 200px;
+		height: 200px;	
+	}
+
+	/**CONTACT**/
+	.contact-article, .price-article{
+		width:100%;
+		font-family:'Times New Roman';
+		
+	}
+
+	form{
+		margin: 100px;
+	}
+
+	#article-image{
+		width: 200px;
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+	
+	.locations{
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	.rightside{
+		margin-left: 80px;
+		width: 80%;
+	}
+
+	.rightside ul li{
+		margin-left: 80px;;
+	}
+	.rightside img{
+		width: 300px;
+		height: 300px;
+	}
+	/** INDEX **/
+	.main-container{
+		margin: 10px;
+		width: 100%;
+	}
+	#products{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	aside {
+		float: none;
+		text-align: left;
+	}
+
+	.image {
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+
+	/** PRODUCTS **/
+	#products-grid {
+		display: grid;
+		gap: 1em;
+		grid-template-areas:
+		'Art5 Art5'
+		'Art3 Art3'
+		'Art2 Art2'
+		'Art1 Art1'
+		'asides asides';
+	}
+
+	#products-grid article {
+		grid-template-columns: 10%;
+	}
+
+	#Article4, #Article6{
+		display: none;
+	}
+
+	#aside-contents {
+		grid-area: aside;
+		grid-template-areas:
+			'aside1' 
+			'aside2 '
+			'aside3'
+		;
+	}
+
+	img{
+		width:400px;
+		height: 400px;
+	}
+	/** PRICING **/
+	.price-article{
+		display: none;
+	}
+	.pricetable{
+		flex-wrap: wrap;
+	}
+
+	table, tr {
+		width: 100%;
+	}
+
+	/** CONTACT **/
+	.contact-article, .price-article{
+		margin-left: 40px;
+		text-align: left;
+		width:80%;
+		font-size: 20px;
+	}
+	.contactpage {
+		flex-direction: column;
+	}
+	
+	#contact-form {
+		padding: 10px;
+	}
+	
+	form{
+		margin: 20px;
+	}
+
+	fieldset {
+		display: block;
+	}
+	
+	#contact-aside{
+		margin: 0px;
+	}
+
+	#contact-aside ul {
+		display: flex;
+		gap: 100px;
+	}
+	#contact-aside ul li:first-child {
+		display: none;
+	}
+	#contact-aside ul li img {
+		width: 90%;
+		border-radius: 10px;
+		height: 160px;
+	}
+	#article-image {
+		min-height: 100px;
+	}
+
+	.copyright-notice {
+		display: block;
+	}
+	.cookie-statement {
+		position: fixed;
+		width: 90%;
+		bottom: 0px; 
+		text-align: right; 
+		opacity: 0.5; 
+		z-index: 9999; 
+		background-color: #FA0;
+	}
+}
+
+
