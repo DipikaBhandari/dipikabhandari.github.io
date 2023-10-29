@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+@font-face {
+	font-family : 'Notable';
+	font-style : normal;
+	font-weight : 400;
+	font-display : swap;
+	src : url(https://fonts.gstatic.com/s/notable/v18/gNMEW3N_SIqx-WX9-HM.ttf) format('truetype');
+	}
 
  /**********BODY***************/
 body{
@@ -184,6 +190,7 @@ aside > ol {
 	margin: 10px;
 	gap: 2em;
 	grid-template-areas:
+	"product product product"
 		'Art2 Art1 Art3'
 		'Art2 Art1 Art3'
 		'Art5 Art1 Art3'
@@ -221,6 +228,7 @@ aside > ol {
 
 /***** PRODUCT ASIDE AREAS ******/
 #products-aside {
+	
 	background-color:rgb(58, 110, 199);
 	grid-area: aside;
 	display: grid;
@@ -563,6 +571,7 @@ fieldset {
 		display: grid;
 		gap: 1em;
 		grid-template-areas:
+		"product product"
 		'Art5 Art5'
 		'Art3 Art3'
 		'Art2 Art2'
