@@ -493,7 +493,7 @@ fieldset {
 	nav ul {
 		position: fixed;
 		width: 30%;
-		height: 35%;
+		height: 50%;
 		right: 0em;
 		flex-direction: column;
 		gap: 10%;
@@ -636,7 +636,7 @@ fieldset {
 	}
 
 	table, tr {
-		width: 100%;
+		width: 80%;
 	}
 
 	/********************* CONTACT *******************/
