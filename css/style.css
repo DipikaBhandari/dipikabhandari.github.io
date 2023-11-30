@@ -123,6 +123,10 @@ p::first-letter{
 	margin-left: 10px;
 }
 
+.product-footer a:visited {
+	color: rgb(171, 39, 39);
+}
+
 aside{
 	background-color: #5790c9;
 	width: 20%;
