@@ -15,7 +15,7 @@ body{
 }
 
 /***************HEADER************/
-.logobox{
+.logo-section{
 	display: grid;
 	background-color: rgb(87, 138, 180);
 	width: 100%;
@@ -85,6 +85,7 @@ nav .active {
 	background-color: #053f75;
 	padding: 10px;
 	border-radius: 5px;
+	font-weight: bold;
 }
 nav a:hover{
 	color: #8fb0d0;
@@ -123,10 +124,6 @@ p::first-letter{
 	margin-left: 10px;
 }
 
-.product-footer a:visited {
-	color: rgb(171, 39, 39);
-}
-
 aside{
 	background-color: #5790c9;
 	width: 20%;
@@ -142,7 +139,7 @@ aside > ol {
 
 /****************INFO PAGE*******************/
 
-.container {
+.info-container {
     display: flex;
     justify-content: center;
     margin: 2em;
@@ -306,8 +303,6 @@ th, td{
 
 .locationlist ul li{
 	list-style: none;
-	
-	
 }
 
 /********CONTACT PAGE*******/
@@ -341,7 +336,7 @@ fieldset input, textarea{
 textarea{
 	height: 200px;
 }
-.btn{
+#btn{
 	border-radius: 10px;
 	color: #fff;
 	margin-top: 18px;
@@ -415,6 +410,9 @@ fieldset {
 		border-width: 1px;
 	}
 
+	#products article a:visited {
+		color: rgb(145, 33, 33);
+	}
 
 	/*********INFO PAGE**********/
 
@@ -428,7 +426,7 @@ fieldset {
 
 	/********LOCATION PAGE*******/
 
-	.locations {
+	.locations-container {
 		display: flex;
 		gap: 10%;
 	}
@@ -623,6 +621,11 @@ fieldset {
 		width: 350px;
 	}
 
+	.locations ul li b {
+		display: block;
+		margin-top: 10px;
+	}
+
 	.locationlist img{
 		width: 300px;
 		height: 300px;
@@ -710,6 +713,10 @@ fieldset {
 		z-index: 9999; 
 		background-color: #FA0;
 	}
+}
+
+.css-validator{
+	float: left;
 }
 
 
