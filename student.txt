@@ -2,4 +2,4 @@ Student Name: Dipika Bhandari
 Student Number: 699324
 Student Class: IT2A 
 Github Repository: https://github.com/DipikaBhandari/dipikabhandari.github.io.git
-Github Pages URL: https://dipikabhandari.github.io
+Github Pages URL: https://dipikabhandari.github.io/
